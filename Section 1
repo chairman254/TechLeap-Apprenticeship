@@ -1,0 +1,7 @@
+def second_largest(nums):
+    unique_nums = list(set(nums))      # Remove duplicates
+    unique_nums.sort(reverse=True)     # Sort descending
+    return unique_nums[1] if len(unique_nums) > 1 else None
+
+# Example
+print(second_largest([4, 7, 1, 9, 3, 9]))
